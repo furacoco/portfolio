@@ -209,6 +209,9 @@ ul li {
 .work_text {
   text-align: center;
 }
+.text_link {
+  color: #fff;
+}
 .work_img_02 {
   margin-bottom: 10%;
 }
