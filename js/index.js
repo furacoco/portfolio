@@ -9,9 +9,9 @@ $(function () {
 });
 $(window).scroll(function (){
 	$(".marker").each(function(){
-    var position = $(this).offset().top; 
-    var scroll = $(window).scrollTop(); 
-    var windowHeight = $(window).height(); 
+    let position = $(this).offset().top; 
+    let scroll = $(window).scrollTop(); 
+    let windowHeight = $(window).height(); 
     if (scroll > position - windowHeight){ 
       $(this).addClass('active'); 
     }
@@ -19,19 +19,19 @@ $(window).scroll(function (){
 });
 $(function(){
   $('a[href^="#"]').click(function(){
-    var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
+    let speed = 500;
+    let href= $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
     $("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
   });
 });
 $(function(){
-  var topBtn = $('#page_top');
+  let topBtn = $('#page_top');
   topBtn.hide();
   $(window).scroll(function () {
-  var w = $(window).width();
+  let w = $(window).width();
   if ($(this).scrollTop() > 100) {
   topBtn.fadeIn();
   } else {
